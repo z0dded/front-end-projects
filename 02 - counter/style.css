@@ -1,0 +1,67 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+main h1 {
+  font-size: 6rem;
+  color: #102b42;
+}
+
+main h2 {
+  font-size: 8rem;
+  color: #102b42;
+}
+
+.buttons {
+  display: flex;
+  gap: 1.5rem;
+}
+
+main button {
+  font-size: 1.2rem;
+  color: #102b42;
+  padding: 0.25rem 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  border: 2px solid #102b42;
+  border-radius: 0.5rem;
+  background-color: transparent;
+}
+
+#decreaseButton:hover {
+  background-color: #e80000;
+  color: white;
+  cursor: pointer;
+}
+
+#resetButton:hover {
+  background-color: #102b42;
+  color: white;
+  cursor: pointer;
+}
+
+#increaseButton:hover {
+  background-color: #007f00;
+  color: white;
+  cursor: pointer;
+}

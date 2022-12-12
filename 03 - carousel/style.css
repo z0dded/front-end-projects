@@ -1,0 +1,129 @@
+:root {
+  --light-blue: #45a3e9;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #142f46;
+  background-color: #f1f5f8;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-title {
+  font-size: 3rem;
+  letter-spacing: 0.3rem;
+}
+
+.page-title::after {
+  content: "";
+  display: block;
+  height: 0.3rem;
+  width: 9rem;
+  border-radius: 1rem;
+  background-color: var(--light-blue);
+  margin: 0.2rem auto 5rem;
+}
+
+.review {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 10px rgb(175, 175, 175);
+  width: 50vw;
+  padding: 0 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.author-img-container {
+  background-image: url(./person-1.jpg);
+  width: 14rem;
+  height: 14rem;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  margin-top: 1.5rem;
+  box-shadow: 10px -4px var(--light-blue);
+}
+
+/* .author-photo {
+  margin-top: 1.5rem;
+  width: 14rem;
+  height: 14rem;
+  border-radius: 50%;
+  box-shadow: 10px -4px var(--light-blue);
+} */
+
+.author-name {
+  text-transform: capitalize;
+  margin-top: 1rem;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+}
+
+.job {
+  color: var(--light-blue);
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.author-words {
+  color: hsl(224, 23%, 55%);
+  margin-bottom: 0.8rem;
+}
+
+.button-container {
+  margin-bottom: 0.8rem;
+}
+
+.change-review-btn {
+  color: var(--light-blue);
+  font-size: 1.5rem;
+  background-color: transparent;
+  border: 0;
+}
+
+.change-review-btn:hover {
+  cursor: pointer;
+}
+
+.previous-btn {
+  margin-right: 1.6rem;
+}
+
+.surprise-me-btn {
+  font-size: 1rem;
+  text-transform: capitalize;
+  padding: 0.2rem 0.6rem;
+  color: var(--light-blue);
+  border: 2px solid var(--light-blue);
+  border-radius: 0.5rem;
+  background-color: transparent;
+  margin-bottom: 1.5rem;
+}
+
+.surprise-me-btn:hover {
+  cursor: pointer;
+  background-color: var(--light-blue);
+  color: white;
+}

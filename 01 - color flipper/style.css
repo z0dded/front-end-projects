@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: red;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-flow: wrap column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+main h1 {
+  background-color: #222222;
+  border-radius: 1rem;
+  color: white;
+  font-size: 3.5rem;
+  padding: 1rem;
+  letter-spacing: 0.4rem;
+}
+
+#color-name {
+  color: #4aacf3;
+}
+
+main button {
+  font-size: 1.25rem;
+  letter-spacing: 0.1rem;
+  padding: 0.5rem 1rem;
+  color: #222;
+  border: #222 2.5px solid;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+
+main button:hover {
+  cursor: pointer;
+  background-color: #222;
+  color: white;
+}
